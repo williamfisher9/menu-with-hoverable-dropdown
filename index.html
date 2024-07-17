@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover Menu</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <div class="logo-img"></div>
+        <div class="logo-title">
+          <p>Engineering Services</p>
+        </div>
+      </div>
+
+      <ul class="navbar">
+        <li><a href="#">home</a></li>
+        <li class="dropdown">
+            <a class="dropdown-link" href="#"><span>services</span><span class="material-symbols-outlined">keyboard_arrow_down</span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Banking Solutions</a></li>
+                <li><a href="#">Training Services</a></li>
+                <li><a href="#">Train the Trainer</a></li>
+                <li><a href="#">Mobile Banking</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-link" href="#"><span>applications</span><span class="material-symbols-outlined">keyboard_arrow_down</span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">SVS Banking</a></li>
+                <li><a href="#">Back office</a></li>
+                <li><a href="#">Mobile Banking</a></li>
+                <li><a href="#">Frondesk</a></li>
+            </ul>
+        </li>
+        <li><a href="#">about us</a></li>
+      </ul>
+
+      <div class="buttons">
+        <div class="btn login-btn"><span>Login</span></div>
+        <div class="btn signup-btn"><span>Sign Up</span></div>
+      </div>
+    </div>
+  </body>
+</html>
