@@ -6,7 +6,7 @@ const applicationsIcon = document.querySelector(".applications-icon");
 const servicesCollapsibleMenu = document.querySelector(".services-collapsible-menu");
 const applicationsCollapsibleMenu = document.querySelector(".applications-collapsible-menu");
 
-// hide collapsa
+// hide collapsible menu when clicking outside its div (if its open)
 window.addEventListener("click", (event) => {
     if(collapsibleMenu.style.display == "block" && event.target.tagName == "BODY"){
         collapsibleMenu.style.display="none";
@@ -18,6 +18,7 @@ window.addEventListener("click", (event) => {
     }
 })
 
+// hide collapsible menu when open if window size abve 975px
 window.addEventListener("resize", () => {
     console.log(window.innerWidth);
 
