@@ -16,13 +16,14 @@ body {
 .header {
     width: 100%;
     height: 55px;
-    background-color: rgba(0, 0, 0, 0.2);
 
     padding: 0 20px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    background-color: rgba(0, 0, 0, 0.07);
 }
 
 .logo {
@@ -44,6 +45,7 @@ body {
     font-size: 1rem;
     font-weight: 200;
     text-align: center;
+    text-wrap: nowrap;
 }
 
 .navbar {
@@ -83,7 +85,7 @@ li:hover {
 
 .btn {
     background: transparent;
-    border: 2px solid #333;
+    border: 2px solid rgb(190, 160, 61);
     
     display: flex;
     justify-content: center;
@@ -104,7 +106,6 @@ li:hover {
     width: 100%;
     height: 100%;
     transition: 0.5s;
-    background-color: rgba(190, 160, 61, 0.3);
 }
 
 .btn::after {
@@ -115,19 +116,20 @@ li:hover {
     width: 100%;
     height: 100%;
     transition: 0.5s;
-    background-color: rgba(190, 160, 61, 0.3);
 }
 
 .btn:hover::before {
     width: 0;
+    background-color: rgba(190, 160, 61, 0.2);
 }
 
 .btn:hover::after {
     width: 0;
+    background-color: rgba(190, 160, 61, 0.2);
 }
 
 .btn:hover {
-    border: 2px solid rgb(190, 160, 61);
+    border: 2px solid #333;
 }
 
 .btn > span {
@@ -139,10 +141,8 @@ li:hover {
     width: 100%;
     height: 100%;
     position: relative;
+    text-wrap: nowrap;
 }
-
-
-
 
 .btn > span::before {
     position: absolute;
@@ -152,7 +152,6 @@ li:hover {
     width: 100%;
     height: 0;
     transition: 0.5s;
-    background-color: rgba(190, 160, 61, 0.1);
 }
 
 .btn > span::after {
@@ -163,16 +162,17 @@ li:hover {
     width: 100%;
     height: 0;
     transition: 0.5s;
-    background-color: rgba(190, 160, 61, 0.1);
 }
 
 
 .btn > span:hover::after{
     height: 100%;
+    background-color: rgba(190, 160, 61, 0.1);
 }
 
 .btn > span:hover::before{
     height: 100%;
+    background-color: rgba(190, 160, 61, 0.1);
 }
 
 
@@ -226,4 +226,127 @@ li:hover {
     height: 100px;
     background-color: red;
     border-radius: 50%;
+}
+
+.menu-bars {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+.header .menu-bars .icon {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.header .menu-bars:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.collapsible-menu {
+    position: absolute;
+    width: 100%;
+    height: max-content;
+    top: 55px;
+    left: 0;
+    background-color: rgb(190, 160, 61);
+    display: none;
+}
+
+.collapsible-menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.collapsible-menu ul li {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.collapsible-menu ul li:hover {
+    background-color: rgba(61, 190, 85, 0.3);
+    cursor: pointer;
+}
+
+.button-link {
+    display: none;
+}
+
+@media only screen and (max-width: 1050px) {
+    a{
+        font-size: 0.9rem;
+        text-wrap: nowrap;
+    }
+
+    .navbar > li {
+        padding: 0 10px;
+    }
+
+    .dropdown-menu {
+        transform: translateX(-10px);
+    }
+
+}
+
+@media only screen and (max-width: 975px) {
+    .navbar {
+        display: none;
+    }
+
+    .logo .logo-title {
+        display: none;
+    }
+
+    .menu-bars {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .buttons {
+        display: none;
+    }
+    
+    .button-link {
+        display: block;
+    }
+}
+
+.services-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-icon > span {
+    color: #fff;
+}
+
+.services-collapsible-menu {
+    display: none;
+    background-color: rgba(255, 196, 0, 0.3);
+}
+
+.applications-collapsible-menu {
+    display: none;
+    background-color: rgba(255, 196, 0, 0.3);
+}
+
+.applications-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.applications-icon > span {
+    color: #fff;
 }

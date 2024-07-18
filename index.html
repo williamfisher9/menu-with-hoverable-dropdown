@@ -10,10 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./style.css" />
+
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="header">
+      <div class="menu-bars">
+        <i class="icon fa-solid fa-bars"></i>
+      </div>
+
       <div class="logo">
         <div class="logo-img"></div>
         <div class="logo-title">
@@ -47,6 +57,35 @@
       <div class="buttons">
         <div class="btn login-btn"><span>Login</span></div>
         <div class="btn signup-btn"><span>Sign Up</span></div>
+      </div>
+
+      <div class="collapsible-menu">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li class="services-icon"><a href="#">services</a><span class="material-symbols-outlined">keyboard_arrow_down</span></li>
+
+          <li class="services-collapsible-menu">
+            <ul>
+              <li><a href="#">Banking Solutions</a></li>
+              <li><a href="#">Training Services</a></li>
+              <li><a href="#">Train the Trainer</a></li>
+              <li><a href="#">Mobile Banking</a></li>
+          </ul>
+          </li>
+
+          <li class="applications-icon"><a href="#">applications</a><span class="material-symbols-outlined">keyboard_arrow_down</span></li>
+          <li class="applications-collapsible-menu">
+            <ul>
+              <li><a href="#">SVS Banking</a></li>
+                <li><a href="#">Back office</a></li>
+                <li><a href="#">Mobile Banking</a></li>
+                <li><a href="#">Frondesk</a></li>
+          </ul>
+          </li>
+          <li><a href="#">about us</a></li>
+          <li class="button-link"><a href="#">login</a></li>
+          <li class="button-link"><a href="#">sign up</a></li>
+        </ul>
       </div>
     </div>
   </body>
